@@ -55,4 +55,22 @@ public class Ejemplopersona {
     public double getTalla() {
         return talla;
     }
+
+    // Método main para ejecutar el programa
+    public static void main(String[] args) {
+        Ejemplopersona persona = new Ejemplopersona();
+
+        persona.setNombre("Maria");
+        persona.setApellido("López");
+        persona.setEdad(30);
+        persona.setGenero("Femenino");
+        persona.setPeso(60.5);
+        persona.setTalla(1.50);
+
+        System.out.println("Nombre completo: " + persona.getNombre() + " " + persona.getApellido());
+        System.out.println("Edad: " + persona.getEdad());
+        System.out.println("Género: " + persona.getGenero());
+        System.out.println("Peso: " + persona.getPeso() + " kg");
+        System.out.println("Talla: " + persona.getTalla() + " m");
+    }
 }
